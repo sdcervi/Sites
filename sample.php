@@ -31,7 +31,8 @@
 
 	<section class="jumbotron text-center">
 		<div class="container">
-			<p class="lead text-muted">This is a sample dex to show what the caught/not caught difference would be.  Caught Pok&eacute;mon will be full color with names under them, and Pok&eacute;mon that haven't yet been caught will be very faint.</p>				
+			<p class="lead text-muted">This is a sample dex to show what the caught/not caught difference would be.  Caught Pok&eacute;mon will be full color with names under them, and Pok&eacute;mon that haven't yet been caught will be very faint.</p>
+            <p>Click on a Pok&eacute;mon to toggle Caught on or off.</p>
 		</div>
 	</section>
 	
