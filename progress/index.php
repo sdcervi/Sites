@@ -35,20 +35,14 @@
 		
 		<h2>Features to (possibly) add:</h2>
 		<ul>
-			<li>Sprite cycles on click:</li>
-			<ul>
-				<li>Greyed out/faded</li>
-				<li>Color to indicate caught</li>
-				<li>Looking/Trading states?</li>
-			</ul>
+			<li>Add a way to indicate looking/trading/have but need to put in place states. Maybe icon overlays in the corners a la Pokemon go?</li>
+            <li>Add a "mark/unmark all as caught" at the box level</li>
 			<li>Dynamically updating caught count for each box</li>
 			<li>Dynamically updating caught % at top of page</li>
-			<li>Shiny forms toggle button</li>
 			<li>User account registration to save data</li>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
-            <li>Upload to Google Cloud once it works well enough to be printable or viable static reference</li>
             <li>Add a donate/support page. KoFi? PayPal? Patreon?</li>
             <li>High contrast mode, possibly colorblind-friendly mode as well?</li>
             <li>Pixel block thumbnail preview of boxes with gray/red/green</li>
@@ -62,6 +56,10 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-07</li>
+            <ul>
+                <li>Got caught state toggle between grayed out and full color to work</li>
+            </ul>
             <li>2020-05-06</li>
             <ul>
                 <li>Fixed navbar padding issue and added active page link functionality</li>

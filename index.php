@@ -119,5 +119,12 @@
 </main>
 
 <?php include 'php/footer.php' ?>
+    
+<script>
+    let caughtToggle = document.getElementsByClassName("dex-entry");
+    for (i = 0; i < caughtToggle.length; i++) {
+        caughtToggle[i].classList.add("caught");
+    }
+</script>
 	
 </html>

@@ -78,7 +78,6 @@ span.box-caught {
 	border: none;
 	margin-right: 0!important;
 	margin-left: 0!important;
-    background-color: #ffeeee;
 }
 
 .dex-entry .card-body {
@@ -155,18 +154,10 @@ h4.dex-entry-form {
     color: lightgray;
 }
 
-.caught {
-    background-color: white;
-}
-
 .caught img {
 	opacity: 1;
 }
 
 .caught h4 {
     color: black;
-}
-
-.traded {
-    background-color: palegreen;
 }

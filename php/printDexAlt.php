@@ -23,7 +23,7 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
     if ($species_array[$dexID][0]["alola"] == true) {
         $species = $species_array[$dexID][0]["name"];
         $img_species = $species;
-        echo '<div class="card col-2 dex-entry caught" id="alolanDexEntry-' . $dextype. '-' . $dexID . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-alolan.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="alolanDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'alolanDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-alolan.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
         $printCount++;
         if (($printCount % 6) == 0) {
             echo '</div><div class="row">';
@@ -56,7 +56,7 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
         if ($species == "darmanitan"){
             $modifier = "-standard";
         }
-        echo '<div class="card col-2 dex-entry caught" id="galarianDexEntry-' . $dextype. '-' . $dexID . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-galarian' . $modifier . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="galarianDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'galarianDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-galarian' . $modifier . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
         $printCount++;
         if (($printCount % 6) == 0) {
             echo '</div><div class="row">';
@@ -99,8 +99,8 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
         if ($species == "meowstic" || $species == "indeedee"){
             $modifier = "emale";
         }
-        echo '<div class="card col-2 dex-entry caught" id="maleDexEntry-' . $dextype. '-' . $dexID . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">Male</h4></div></div>';
-        echo '<div class="card col-2 dex-entry caught" id="femaleDexEntry-' . $dextype. '-' . $dexID . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-f' . $modifier . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">Female</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="maleDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'maleDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">Male</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="femaleDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'femaleDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-f' . $modifier . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">Female</h4></div></div>';
         $printCount += 2;
         if (($printCount % 6) == 0) {
             if (($printCount % 30) == 0) {
@@ -148,7 +148,7 @@ for ($dexNum = 1; $dexNum <= sizeof($alt_array); $dexNum++) {
             $img_species = "minior-core";
             $form_name = "all cores";
         }
-        echo '<div class="card col-2 dex-entry caught" id="altDexEntry-' . $dextype. '-' . $id . '-' . $img_species . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $id . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">' . $form_name . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="altDexEntry-' . $dextype. '-' . $id . '-' . $img_species . '" onclick="changeCaughtState(\'altDexEntry-' . $dextype. '-' . $id . '-' . $img_species . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $id . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">' . $form_name . '</h4></div></div>';
         $printCount++;
         if (($printCount % 6) == 0) {
             if (($printCount % 30) == 0) {
@@ -187,7 +187,7 @@ for ($dexNum = 0; $dexNum < sizeof($unown_array); $dexNum++) {
     if ($variant == "em"){
         $variant = "!";
     }
-	echo '<div class="card col-2 dex-entry caught" id="unownDexEntry-' . $dextype. '-' . $dexNum . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/unown-' . $unown_array[$dexNum] . '.png" alt=""><h4 class="dex-entry-number">201</h4><h4 class="dex-entry-name">Unown</h4><h4 class="dex-entry-form">' . $variant . '</h4></div></div>';
+	echo '<div class="card col-2 dex-entry" id="unownDexEntry-' . $dextype. '-' . $dexNum . '" onclick="changeCaughtState(\'unownDexEntry-' . $dextype. '-' . $dexNum . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/unown-' . $unown_array[$dexNum] . '.png" alt=""><h4 class="dex-entry-number">201</h4><h4 class="dex-entry-name">Unown</h4><h4 class="dex-entry-form">' . $variant . '</h4></div></div>';
 	if ((($dexNum + 1) % 6) == 0) {
 		echo '</div><div class="row">';
 	}
@@ -205,7 +205,7 @@ echo '<div class="row">';
 
 for ($dexNum = 0; $dexNum < sizeof($vivillon_array); $dexNum++) {
     $variant = str_replace("-", " ", $vivillon_array[$dexNum]);
-	echo '<div class="card col-2 dex-entry caught" id="vivillonDexEntry-' . $dextype. '-' . $dexNum . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/vivillon-' . $vivillon_array[$dexNum] . '.png" alt=""><h4 class="dex-entry-number">666</h4><h4 class="dex-entry-name">Vivillon</h4><h4 class="dex-entry-form">' . $variant . '</h4></div></div>';
+	echo '<div class="card col-2 dex-entry" id="vivillonDexEntry-' . $dextype. '-' . $dexNum . '" onclick="changeCaughtState(\'vivillonDexEntry-' . $dextype. '-' . $dexNum . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/vivillon-' . $vivillon_array[$dexNum] . '.png" alt=""><h4 class="dex-entry-number">666</h4><h4 class="dex-entry-name">Vivillon</h4><h4 class="dex-entry-form">' . $variant . '</h4></div></div>';
 	if ((($dexNum + 1) % 6) == 0) {
 		echo '</div><div class="row">';
 	}
@@ -229,7 +229,7 @@ for ($flavorCounter = 0; $flavorCounter < sizeof($alcremie_array["flavors"]); $f
     $flavor = str_replace("-", " ", $alcremie_array["flavors"][$flavorCounter]);
     for ($toppingCounter = 0; $toppingCounter < sizeof($alcremie_array["toppings"]); $toppingCounter++) {
         $topping = $alcremie_array["toppings"][$toppingCounter];
-        echo '<div class="card col-2 dex-entry caught" id="alcremieDexEntry-' . $dextype . '-' . $printCount . '"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">201</h4><h4 class="dex-entry-name">Alcremie</h4><h4 class="dex-entry-form">' . $flavor . '<br>' . $topping . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="alcremieDexEntry-' . $dextype . '-' . $printCount . '" onclick="changeCaughtState(\'alcremieDexEntry-' . $dextype . '-' . $printCount . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">201</h4><h4 class="dex-entry-name">Alcremie</h4><h4 class="dex-entry-form">' . $flavor . '<br>' . $topping . '</h4></div></div>';
 	
         $printCount++;
         if (($printCount % 6) == 0) {
