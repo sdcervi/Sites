@@ -33,19 +33,31 @@
 		
 		<h1>Progress &amp; To-dos</h1>
 		
-		<h2>Features to (possibly) add:</h2>
+		<h2>Features to add:</h2>
+        <h3>High priority</h3>
 		<ul>
-			<li>Add a way to indicate looking/trading/have but need to put in place states. Maybe icon overlays in the corners a la Pokemon go?</li>
             <li>Add a "mark/unmark all as caught" at the box level</li>
-			<li>Dynamically updating caught count for each box</li>
-			<li>Dynamically updating caught % at top of page</li>
 			<li>User account registration to save data</li>
-			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
+            <li>High contrast mode</li>
+            <li>Add functionality for tracing/placing icons to toggle on click</li>
+		</ul>
+        <h3>Low priority</h3>
+		<ul>
+            <li>Come up with better global toggle than "show/hide"</li>
+            <li>Pixel block thumbnail preview of boxes with colors</li>
+            <ul>
+                <li>Black: caught</li>
+                <li>Light gray: not caught</li>
+                <li>Orange: trading</li>
+                <li>Blue: placing</li>
+            </ul>
             <li>Add a donate/support page. KoFi? PayPal? Patreon?</li>
-            <li>High contrast mode, possibly colorblind-friendly mode as well?</li>
-            <li>Pixel block thumbnail preview of boxes with gray/red/green</li>
+			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
+			<li>Dynamically updating caught count for each box</li>
+			<li>Dynamically updating caught % at top of page</li>
+            <li>Add expand/collapse icons for boxes</li>
 		</ul>
 		
 		<h2>Bugs to squish</h2>
@@ -56,6 +68,10 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-09</li>
+            <ul>
+                <li>Set up CSS for trading/placing icons</li>
+            </ul>
             <li>2020-05-07</li>
             <ul>
                 <li>Got caught state toggle between grayed out and full color to work</li>

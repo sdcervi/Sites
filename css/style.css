@@ -161,3 +161,26 @@ h4.dex-entry-form {
 .caught h4 {
     color: black;
 }
+
+.trading:before {
+    content: url(/assets/icons/trade.svg);
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.place:after {
+    content: url(/assets/icons/box.svg);
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+h4.usage-key {
+    color: black;
+    margin-top: 10px;
+}
