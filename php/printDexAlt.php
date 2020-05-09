@@ -23,7 +23,7 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
     if ($species_array[$dexID][0]["alola"] == true) {
         $species = $species_array[$dexID][0]["name"];
         $img_species = $species;
-        echo '<div class="card col-2 dex-entry" id="alolanDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'alolanDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-alolan.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="alolanDexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'alolanDexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '-alolan.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
         $printCount++;
         if (($printCount % 6) == 0) {
             echo '</div><div class="row">';

@@ -59,16 +59,18 @@
                                 <h4 class="dex-entry-number usage-key">Caught</h4>
                             </div>
                         </div>
-                        <div class="card col-2 dex-entry trading" id="usageKey-trading">
+                        <div class="card col-2 dex-entry" id="usageKey-trading">
                             <div class="card-body">
+                                <div class="trade-icon icon-show"></div>
                                 <img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
                                 <h4 class="dex-entry-number">001</h4>
                                 <h4 class="dex-entry-name">Bulbasaur</h4>
                                 <h4 class="dex-entry-number usage-key">Trading for</h4>
                             </div>
                         </div>
-                        <div class="card col-2 dex-entry place" id="usageKey-place">
+                        <div class="card col-2 dex-entry" id="usageKey-place">
                             <div class="card-body">
+                                <div class="place-icon icon-show"></div>
                                 <img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
                                 <h4 class="dex-entry-number">001</h4>
                                 <h4 class="dex-entry-name">Bulbasaur</h4>
@@ -171,6 +173,16 @@
     
     function changeCaughtState (divID) {
         document.getElementById(divID).classList.toggle("caught");
+    }
+    
+    function changeTradeState (divID) {
+        document.getElementById(divID).classList.toggle("icon-show");
+        event.stopPropagation();
+    }
+    
+    function changePlaceState (divID) {
+        document.getElementById(divID).classList.toggle("icon-show");
+        event.stopPropagation();
     }
 </script>
 	

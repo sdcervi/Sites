@@ -35,7 +35,7 @@ for ($dexNum = $start; $dexNum < $start + 30; $dexNum++) {
 	if ($species == "alcremie"){
 		$img_species = "alcremie-vanilla-cream-strawberry";
 	}
-	echo '<div class="card col-2 dex-entry" id="dexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'dexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
+	echo '<div class="card col-2 dex-entry" id="dexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'dexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><div class="trade-icon" id="dexEntry-trade-' . $dextype. '-' . $dexID . '" onclick="changeTradeState(\'dexEntry-trade-' . $dextype. '-' . $dexID . '\')"></div><div class="place-icon" id="dexEntry-place-' . $dextype. '-' . $dexID . '" onclick="changePlaceState(\'dexEntry-place-' . $dextype. '-' . $dexID . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
 	if (($dexID % 6) == 0) {
 		echo '</div><div class="row">';
 	}

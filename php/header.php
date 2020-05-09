@@ -10,7 +10,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item" id="nav-home"><a class="nav-link" href="/sample.php">Living Dex</a></li>
+                <li class="nav-item" id="nav-home"><a class="nav-link" href="/">Living Dex</a></li>
                 <li class="nav-item" id="nav-progress"><a class="nav-link" href="/progress/">Progress &amp; To-dos</a></li>
                 <li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>
                 <li class="nav-item" id="nav-faq"><a class="nav-link" href="/faq/">FAQ</a></li>
