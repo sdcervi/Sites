@@ -71,6 +71,7 @@
             <li>2020-05-09</li>
             <ul>
                 <li>Set up CSS for trading/placing icons</li>
+                <li>Added click toggle functionality for those icons</li>
             </ul>
             <li>2020-05-07</li>
             <ul>
