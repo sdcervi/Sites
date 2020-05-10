@@ -41,7 +41,6 @@
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
             <li>High contrast mode</li>
-            <li>Add functionality for tracing/placing icons to toggle on click</li>
 		</ul>
         <h3>Low priority</h3>
 		<ul>
@@ -58,11 +57,12 @@
 			<li>Dynamically updating caught count for each box</li>
 			<li>Dynamically updating caught % at top of page</li>
             <li>Add expand/collapse icons for boxes</li>
+            <li>Transparency in favicon</li>
 		</ul>
 		
 		<h2>Bugs to squish</h2>
 		<ul>
-			<li>Figure out how to store male/female symbols in string for Nidoran</li>
+			<li>Figure out how to store male/female symbols in string for Nidoran, &eacute; for Flab&eacute;b&eacute;</li>
 		</ul>
 		
 		<h2>Changelog</h2>
