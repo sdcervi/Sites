@@ -45,12 +45,6 @@
 <?php include 'php/header.php' ?>
 
 <main role="main">
-
-	<section class="jumbotron text-center">
-		<div class="container">
-			<p class="lead text-muted">This is a sample dex (mine, actually) to show what the caught/not caught difference would be.  Caught Pok&eacute;mon will be full color with names under them, and Pok&eacute;mon that haven't yet been caught will be very faint.</p>				
-		</div>
-	</section>
 	
 	<!-- National dex -->
 	<div class="container">
@@ -180,29 +174,21 @@
 <script>
 
     let swordlist = [
-        "femaleDexEntry-normal-119",
-        "maleDexEntry-normal-185",
         "femaleDexEntry-normal-221",
         "maleDexEntry-normal-224",
         "maleDexEntry-normal-272",
         "femaleDexEntry-normal-272",
         "maleDexEntry-normal-275",
-        "femaleDexEntry-normal-275",
         "maleDexEntry-normal-315",
         "maleDexEntry-normal-350",
         "femaleDexEntry-normal-350",
         "maleDexEntry-normal-407",
         "femaleDexEntry-normal-407",
-        "maleDexEntry-normal-415",
-        "femaleDexEntry-normal-415",
         "maleDexEntry-normal-453",
         "femaleDexEntry-normal-453",
         "maleDexEntry-normal-454",
         "femaleDexEntry-normal-454",
-        "maleDexEntry-normal-459",
         "femaleDexEntry-normal-459",
-        "maleDexEntry-normal-460",
-        "femaleDexEntry-normal-460",
         "maleDexEntry-normal-461",
         "femaleDexEntry-normal-461",
         "maleDexEntry-normal-464",
@@ -288,39 +274,23 @@
     ];
     
     let movelist = [
-        "maleDexEntry-normal-085",
-        "femaleDexEntry-normal-185",
-        "dexEntry-normal-146",
-        "maleDexEntry-normal-195",
-        "maleDexEntry-normal-207",
+        "maleDexEntry-normal-185",
+        "femaleDexEntry-normal-214",
+        "maleDexEntry-normal-317",
+        "femaleDexEntry-normal-397",
+        "maleDexEntry-normal-444",
         
-        "dexEntry-normal-145",
-        "femaleDexEntry-normal-207",
-        "femaleDexEntry-normal-229",
-        "dexEntry-normal-144",
-        "maleDexEntry-normal-166",
+        "maleDexEntry-normal-459",
+        "maleDexEntry-normal-460",
+        "femaleDexEntry-normal-460",
+        "femaleDexEntry-normal-119",
+        "altDexEntry-normal-774-minior-violet-core",
         
-        "maleDexEntry-normal-255",
-        "femaleDexEntry-normal-308",
-        "maleDexEntry-normal-419",
-        "femaleDexEntry-normal-419",
-        "maleDexEntry-normal-443",
-        
-        "femaleDexEntry-normal-443",
-        "unownDexEntry-normal-2",
-        "unownDexEntry-normal-9",
-        "femaleDexEntry-normal-026",
-        "altDexEntry-normal-802-magearna",
-        
-        "maleDexEntry-normal-229",
-        "maleDexEntry-normal-316",
-        "maleDexEntry-normal-323",
-        "altDexEntry-normal-669-flabebe-white",
-        "altDexEntry-normal-669-flabebe-blue",
-        
-        "altDexEntry-normal-670-floette-yellow",
-        "altDexEntry-normal-774-minior-orange-core",
-        "maleDexEntry-normal-097"
+        "femaleDexEntry-normal-275",
+        "femaleDexEntry-normal-405",
+        "femaleDexEntry-normal-415",
+        "maleDexEntry-normal-415",
+        "maleDexEntry-normal-445"
     ];
 
     let wishlist = [
@@ -347,7 +317,6 @@
         "femaleDexEntry-normal-203",
         "maleDexEntry-normal-212",
         "femaleDexEntry-normal-212",
-        "femaleDexEntry-normal-214",
         "maleDexEntry-normal-217",
         "femaleDexEntry-normal-217",
         "maleDexEntry-normal-232",
@@ -363,10 +332,10 @@
         "maleDexEntry-normal-307",
         "femaleDexEntry-normal-307",
         "femaleDexEntry-normal-316",
-        "maleDexEntry-normal-317",
         "femaleDexEntry-normal-317",
         "maleDexEntry-normal-322",
         "femaleDexEntry-normal-322",
+        "femaleDexEntry-normal-323",
         "maleDexEntry-normal-332",
         "femaleDexEntry-normal-332",
         "maleDexEntry-normal-369",
@@ -374,7 +343,6 @@
         "maleDexEntry-normal-396",
         "femaleDexEntry-normal-396",
         "maleDexEntry-normal-397",
-        "femaleDexEntry-normal-397",
         "maleDexEntry-normal-398",
         "femaleDexEntry-normal-398",
         "maleDexEntry-normal-399",
@@ -390,16 +358,13 @@
         "maleDexEntry-normal-404",
         "femaleDexEntry-normal-404",
         "maleDexEntry-normal-405",
-        "femaleDexEntry-normal-405",
         "maleDexEntry-normal-417",
         "femaleDexEntry-normal-417",
         "maleDexEntry-normal-418",
         "femaleDexEntry-normal-418",
         "maleDexEntry-normal-424",
         "femaleDexEntry-normal-424",
-        "maleDexEntry-normal-444",
         "femaleDexEntry-normal-444",
-        "maleDexEntry-normal-445",
         "femaleDexEntry-normal-445",
         "maleDexEntry-normal-456",
         "femaleDexEntry-normal-456",
@@ -450,7 +415,6 @@
         "altDexEntry-normal-720-hoopa-unbound",
         "altDexEntry-normal-745-lycanroc-dusk",
         "altDexEntry-normal-774-minior-meteor",
-        "altDexEntry-normal-774-minior-violet-core",
         "altDexEntry-normal-800-necrozma",
         "altDexEntry-normal-800-necrozma-dawn-wings",
         "altDexEntry-normal-800-necrozma-dusk-mane",
