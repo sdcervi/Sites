@@ -73,6 +73,7 @@
 		<h2>Bugs to squish</h2>
 		<ul>
 			<li>Figure out how to store male/female symbols in string for Nidoran, &eacute; for Flab&eacute;b&eacute;</li>
+            <li>Get Google Analytics working (and figure out how to use it, ugh)</li>
 		</ul>
 		
 		<h2>Changelog</h2>
