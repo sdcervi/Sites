@@ -46,7 +46,7 @@
 		<h2>Features to add:</h2>
         <h3>High priority</h3>
 		<ul>
-            <li>Add a "mark/unmark all as caught" at the box level</li>
+            <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
 			<li>User account registration to save data</li>
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
@@ -62,7 +62,6 @@
                 <li>Orange: trading</li>
                 <li>Blue: placing</li>
             </ul>
-            <li>Add a donate/support page. KoFi? PayPal? Patreon?</li>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
 			<li>Dynamically updating caught count for each box</li>
 			<li>Dynamically updating caught % at top of page</li>
@@ -73,12 +72,15 @@
 		<h2>Bugs to squish</h2>
 		<ul>
 			<li>Figure out how to store male/female symbols in string for Nidoran, &eacute; for Flab&eacute;b&eacute;</li>
-            <li>Get Google Analytics working (and figure out how to use it, ugh)</li>
 		</ul>
 		
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-11</li>
+            <ul>
+                <li>Set up MySQL and made it display things</li>
+            </ul>
             <li>2020-05-09</li>
             <ul>
                 <li>Set up CSS for trading/placing icons</li>

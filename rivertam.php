@@ -188,7 +188,6 @@
         "femaleDexEntry-normal-453",
         "maleDexEntry-normal-454",
         "femaleDexEntry-normal-454",
-        "femaleDexEntry-normal-459",
         "maleDexEntry-normal-461",
         "femaleDexEntry-normal-461",
         "maleDexEntry-normal-464",
@@ -290,7 +289,12 @@
         "femaleDexEntry-normal-405",
         "femaleDexEntry-normal-415",
         "maleDexEntry-normal-415",
-        "maleDexEntry-normal-445"
+        "maleDexEntry-normal-445",
+        
+        "maleDexEntry-normal-307",
+        "femaleDexEntry-normal-402",
+        "femaleDexEntry-normal-459",
+        "altDexEntry-normal-745-lycanroc-dusk"
     ];
 
     let wishlist = [
@@ -329,7 +333,6 @@
         "femaleDexEntry-normal-267",
         "maleDexEntry-normal-269",
         "femaleDexEntry-normal-269",
-        "maleDexEntry-normal-307",
         "femaleDexEntry-normal-307",
         "femaleDexEntry-normal-316",
         "femaleDexEntry-normal-317",
@@ -352,7 +355,6 @@
         "maleDexEntry-normal-401",
         "femaleDexEntry-normal-401",
         "maleDexEntry-normal-402",
-        "femaleDexEntry-normal-402",
         "maleDexEntry-normal-403",
         "femaleDexEntry-normal-403",
         "maleDexEntry-normal-404",
@@ -413,7 +415,6 @@
         "altDexEntry-normal-671-florges-white",
         "altDexEntry-normal-720-hoopa-confined",
         "altDexEntry-normal-720-hoopa-unbound",
-        "altDexEntry-normal-745-lycanroc-dusk",
         "altDexEntry-normal-774-minior-meteor",
         "altDexEntry-normal-800-necrozma",
         "altDexEntry-normal-800-necrozma-dawn-wings",
