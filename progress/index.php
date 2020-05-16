@@ -51,6 +51,7 @@
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
             <li>High contrast mode</li>
+            <li>Plan out how to best store user dexes</li>
 		</ul>
         <h3>Low priority</h3>
 		<ul>
@@ -77,6 +78,10 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-15</li>
+            <ul>
+                <li>Successfully got a MySQL version of the Pok&eacute;dex (National only, no alts or shinies) to render</li>
+            </ul>
             <li>2020-05-11</li>
             <ul>
                 <li>Set up MySQL and made it display things</li>
