@@ -11,7 +11,7 @@ $maxDexEntries = 890;
 
 // Print Alolan forms
 
-echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="alt-forms-' . $dextype . '">';
+echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="alolan-forms-' . $dextype . '">';
 echo '<div class="card-header" id="alolan-forms-' . $dextype . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alolan-forms-' . $dextype . '" aria-expanded="true" aria-controls="collapse-alolan-forms-' . $dextype . '"><h3>Alolan Forms</h3></button></div><div class="card-body collapse show" id="collapse-alolan-forms-' . $dextype . '">';
 
 echo '<div class="row">';
@@ -84,18 +84,6 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
     if ($species_array[$dexID][0]["gender"] == true) {
         $species = $species_array[$dexID][0]["name"];
         $img_species = $species;
-        if ($species == "farfetchd"){
-            $species = "farfetch'd";
-        }
-        if ($species == "sirfetchd"){
-            $species = "sirfetch'd";
-        }
-        if ($species == "mr-rime"){
-            $species = "mr. rime";
-        }
-        if ($species == "alcremie"){
-            $img_species = "alcremie-vanilla-cream-strawberry";
-        }
         if ($species == "meowstic" || $species == "indeedee"){
             $modifier = "emale";
         }
@@ -147,6 +135,9 @@ for ($dexNum = 1; $dexNum <= sizeof($alt_array); $dexNum++) {
             $i = 1;
             $img_species = "minior-core";
             $form_name = "all cores";
+        }
+        if ($species == "flabebe"){
+            $species = "flab&eacuteb&eacute";
         }
         echo '<div class="card col-2 dex-entry" id="altDexEntry-' . $dextype. '-' . $id . '-' . $img_species . '" onclick="changeCaughtState(\'altDexEntry-' . $dextype. '-' . $id . '-' . $img_species . '\')"><div class="card-body"><div class="trade-icon" id="altDexEntry-trade-' . $dextype. '-' . $id . '-' . $img_species . '" onclick="changeTradeState(\'altDexEntry-trade-' . $dextype. '-' . $id . '-' . $img_species . '\')"></div><div class="place-icon" id="altDexEntry-place-' . $dextype. '-' . $id . '-' . $img_species . '" onclick="changePlaceState(\'altDexEntry-place-' . $dextype. '-' . $id . '-' . $img_species . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $id . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">' . $form_name . '</h4></div></div>';
         $printCount++;
@@ -229,7 +220,7 @@ for ($flavorCounter = 0; $flavorCounter < sizeof($alcremie_array["flavors"]); $f
     $flavor = str_replace("-", " ", $alcremie_array["flavors"][$flavorCounter]);
     for ($toppingCounter = 0; $toppingCounter < sizeof($alcremie_array["toppings"]); $toppingCounter++) {
         $topping = $alcremie_array["toppings"][$toppingCounter];
-        echo '<div class="card col-2 dex-entry" id="alcremieDexEntry-' . $dextype . '-' . $printCount . '" onclick="changeCaughtState(\'alcremieDexEntry-' . $dextype . '-' . $printCount . '\')"><div class="card-body"><div class="trade-icon" id="alcremieDexEntry-trade-' . $dextype. '-' . $printCount . '" onclick="changeTradeState(\'alcremieDexEntry-trade-' . $dextype. '-' . $printCount . '\')"></div><div class="place-icon" id="alcremieDexEntry-place-' . $dextype. '-' . $printCount . '" onclick="changePlaceState(\'alcremieDexEntry-place-' . $dextype. '-' . $printCount . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">201</h4><h4 class="dex-entry-name">Alcremie</h4><h4 class="dex-entry-form">' . $flavor . '<br>' . $topping . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="alcremieDexEntry-' . $dextype . '-' . $printCount . '" onclick="changeCaughtState(\'alcremieDexEntry-' . $dextype . '-' . $printCount . '\')"><div class="card-body"><div class="trade-icon" id="alcremieDexEntry-trade-' . $dextype. '-' . $printCount . '" onclick="changeTradeState(\'alcremieDexEntry-trade-' . $dextype. '-' . $printCount . '\')"></div><div class="place-icon" id="alcremieDexEntry-place-' . $dextype. '-' . $printCount . '" onclick="changePlaceState(\'alcremieDexEntry-place-' . $dextype. '-' . $printCount . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">869</h4><h4 class="dex-entry-name">Alcremie</h4><h4 class="dex-entry-form">' . $flavor . '<br>' . $topping . '</h4></div></div>';
 	
         $printCount++;
         if (($printCount % 6) == 0) {

@@ -3,7 +3,7 @@
 $config = parse_ini_file('config.ini');
 $connection = new mysqli ($config['host'], $config['username'], $config['password'], $config['db']);
 // We should definitely set up a different user so that root isn't used for this
-$dexArray = $connection->query("SELECT id, name, alola, galar, gender FROM dexDB");
+$dexArray = $connection->query("SELECT id, name FROM dexDB");
 
 $start = (30 * ($boxNum - 1)) + 1;
 $boxStart = str_pad((string) $start, 3, '0', STR_PAD_LEFT);
@@ -36,6 +36,15 @@ while ($row = mysqli_fetch_assoc ($dexArray)){
 	if ($species == "mr-rime"){
 		$species = "mr. rime";
 	}
+	if ($species == "flabebe"){
+		$species = "flab&eacuteb&eacute";
+	}
+	if ($species == "nidoran-f"){
+		$species = "nidoran &#9792";
+	}
+	if ($species == "nidoran-m"){
+		$species = "nidoran &#9794";
+	}
 	if ($species == "alcremie"){
 		$img_species = "alcremie-vanilla-cream-strawberry";
 	}
@@ -60,6 +69,6 @@ while ($row = mysqli_fetch_assoc ($dexArray)){
 }
 echo '</div>';
 
-echo '</div></div>'
+echo '</div></div>';
 
 ?>

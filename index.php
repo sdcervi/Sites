@@ -179,6 +179,14 @@
 <?php include 'php/footer.php' ?>
     
 <script>
+    let caughtToggle = document.getElementsByClassName("dex-entry");
+    for (i = 0; i < caughtToggle.length; i++) {
+        caughtToggle[i].classList.add("caught");
+    }
+    document.getElementById("usageKey-notCaught").classList.remove("caught");
+    document.getElementById("usageKey-trading").classList.remove("caught");
+    document.getElementById("usageKey-place").classList.remove("caught");
+    
     document.getElementById("nav-home").classList.add("active");
     
     function changeCaughtState (divID) {

@@ -47,15 +47,14 @@
         <h3>High priority</h3>
 		<ul>
             <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
-			<li>User account registration to save data</li>
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
             <li>High contrast mode</li>
             <li>Plan out how to best store user dexes</li>
+            <li>Login drop-down in navigation, with below-nav bar of user stats/logout/profile only visible after login</li>
 		</ul>
         <h3>Low priority</h3>
 		<ul>
-            <li>Come up with better global toggle than "show/hide"</li>
             <li>Pixel block thumbnail preview of boxes with colors</li>
             <ul>
                 <li>Black: caught</li>
@@ -68,16 +67,31 @@
 			<li>Dynamically updating caught % at top of page</li>
             <li>Add expand/collapse icons for boxes</li>
             <li>Transparency in favicon</li>
+            <li>Single sign on via Google/etc</li>
+            <li>Functionify the PHP so we're calling functions instead of repeating code blocks</li>
 		</ul>
 		
 		<h2>Bugs to squish</h2>
 		<ul>
-			<li>Figure out how to store male/female symbols in string for Nidoran, &eacute; for Flab&eacute;b&eacute;</li>
+			<li></li>
 		</ul>
 		
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-20</li>
+            <ul>
+                <li>Fully refactored PHP script to print the dex to pull from SQL database</li>
+            </ul>
+            <li>2020-05-19</li>
+            <ul>
+                <li>Learned how to store a JSON object in a MySQL database, read, and print it for alt forms</li>
+                <li>Figured out storing HTML alt codes in a way that PHP can print</li>
+            </ul>
+            <li>2020-05-17</li>
+            <ul>
+                <li>Got a rudimentary ligin/register/change passowrd/logout system to work</li>
+            </ul>
             <li>2020-05-15</li>
             <ul>
                 <li>Successfully got a MySQL version of the Pok&eacute;dex (National only, no alts or shinies) to render</li>

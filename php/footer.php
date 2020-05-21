@@ -4,9 +4,6 @@
 		<p>Site design and layout &copy; 2020 Stephanie Cervi. Pok&eacute;mon images, names, forms, and other relevant information are the property of Nintendo.</p>
 	</div>
 </footer>
-	
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101254077);</script>
-<script async src="//static.getclicky.com/js"></script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery.slim.min.js"><\/script>')</script>
