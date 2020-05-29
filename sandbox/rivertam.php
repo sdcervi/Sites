@@ -179,7 +179,8 @@
         "dexEntry-normal-781",
         
         "femaleDexEntry-normal-190",
-        "maleDexEntry-normal-465"
+        "maleDexEntry-normal-465",
+        "alcremieDexEntry-normal-15" 
     ];
     
     /* GOURGEIST
@@ -329,7 +330,6 @@
         "alcremieDexEntry-normal-12",
         "alcremieDexEntry-normal-13",
         "alcremieDexEntry-normal-14",
-        "alcremieDexEntry-normal-15",
         "alcremieDexEntry-normal-16",
         "alcremieDexEntry-normal-17",
         "alcremieDexEntry-normal-18",
