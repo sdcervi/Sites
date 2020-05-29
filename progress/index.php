@@ -79,6 +79,11 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-05-28</li>
+            <ul>
+                <li>Ported MySQL database to a hosted solution rather than my laptop</li>
+                <li>Fixed Alcremie shiny forms: only one flavor when shiny</li>
+            </ul>
             <li>2020-05-20</li>
             <ul>
                 <li>Fully refactored PHP script to print the dex to pull from SQL database</li>

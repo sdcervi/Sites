@@ -32,9 +32,6 @@
         .traded {
             background-color: palegreen;
         }
-        .sword {
-            background-color: orange;
-        }
         
     </style>
 
@@ -149,22 +146,19 @@
         "collapse271",
         "collapse301",
         "collapse331",
-        "collapse361",
         "collapse391",
         "collapse421",
         "collapse451",
-        "collapse481",
         "collapse511",
         "collapse541",
         "collapse571",
         "collapse601",
         "collapse631",
         "collapse661",
-        "collapse691",
         "collapse721",
         "collapse751",
-        "collapse781",
         "collapse811",
+        "collapse841",
         "collapse871",
         "collapse-alolan-forms-normal",
         "collapse-galarian-forms-normal",
@@ -176,71 +170,16 @@
 </script>
     
 <script>
-
-    let swordlist = [
-        "dexEntry-normal-856",
-        "altDexEntry-normal-421-cherrim-overcast",
-        "alcremieDexEntry-normal-4",
-        "alcremieDexEntry-normal-5",
-        "alcremieDexEntry-normal-7",
-        "alcremieDexEntry-normal-9",
-        "alcremieDexEntry-normal-11",
-        "alcremieDexEntry-normal-12",
-        "alcremieDexEntry-normal-13",
-        "alcremieDexEntry-normal-14",
-        "alcremieDexEntry-normal-15",
-        "alcremieDexEntry-normal-16",
-        "alcremieDexEntry-normal-17",
-        "alcremieDexEntry-normal-18",
-        "alcremieDexEntry-normal-19",
-        "alcremieDexEntry-normal-20",
-        "alcremieDexEntry-normal-21",
-        "alcremieDexEntry-normal-22",
-        "alcremieDexEntry-normal-23",
-        "alcremieDexEntry-normal-24",
-        "alcremieDexEntry-normal-25",
-        "alcremieDexEntry-normal-26",
-        "alcremieDexEntry-normal-27",
-        "alcremieDexEntry-normal-28",
-        "alcremieDexEntry-normal-29",
-        "alcremieDexEntry-normal-30",
-        "alcremieDexEntry-normal-31",
-        "alcremieDexEntry-normal-32",
-        "alcremieDexEntry-normal-33",
-        "alcremieDexEntry-normal-34",
-        "alcremieDexEntry-normal-35",
-        "alcremieDexEntry-normal-36",
-        "alcremieDexEntry-normal-37",
-        "alcremieDexEntry-normal-38",
-        "alcremieDexEntry-normal-39",
-        "alcremieDexEntry-normal-40",
-        "alcremieDexEntry-normal-41",
-        "alcremieDexEntry-normal-44",
-        "alcremieDexEntry-normal-45",
-        "alcremieDexEntry-normal-46",
-        "alcremieDexEntry-normal-47",
-        "alcremieDexEntry-normal-48",
-        "alcremieDexEntry-normal-49",
-        "alcremieDexEntry-normal-50",
-        "alcremieDexEntry-normal-51",
-        "alcremieDexEntry-normal-52",
-        "alcremieDexEntry-normal-53",
-        "alcremieDexEntry-normal-54",
-        "alcremieDexEntry-normal-55",
-        "alcremieDexEntry-normal-56",
-        "alcremieDexEntry-normal-57",
-        "alcremieDexEntry-normal-58",
-        "alcremieDexEntry-normal-59",
-        "alcremieDexEntry-normal-60",
-        "alcremieDexEntry-normal-61",
-        "alcremieDexEntry-normal-62"
-    ];
     
     let movelist = [
-        "maleDexEntry-normal-203",
-        "maleDexEntry-normal-322",
-        "unownDexEntry-normal-23",
-        "unownDexEntry-normal-12"
+        "maleDexEntry-normal-198",
+        "maleDexEntry-normal-417",
+        "alcremieDexEntry-normal-7",
+        "alcremieDexEntry-normal-44",
+        "dexEntry-normal-781",
+        
+        "femaleDexEntry-normal-190",
+        "maleDexEntry-normal-465"
     ];
     
     /* GOURGEIST
@@ -266,8 +205,6 @@
         "dexEntry-normal-807",
         "maleDexEntry-normal-186",
         "femaleDexEntry-normal-186",
-        "femaleDexEntry-normal-190",
-        "maleDexEntry-normal-198",
         "femaleDexEntry-normal-198",
         "femaleDexEntry-normal-203",
         "maleDexEntry-normal-212",
@@ -285,7 +222,6 @@
         "femaleDexEntry-normal-269",
         "femaleDexEntry-normal-317",
         "femaleDexEntry-normal-322",
-        "femaleDexEntry-normal-323",
         "maleDexEntry-normal-332",
         "femaleDexEntry-normal-332",
         "femaleDexEntry-normal-369",
@@ -301,7 +237,6 @@
         "maleDexEntry-normal-404",
         "femaleDexEntry-normal-404",
         "maleDexEntry-normal-405",
-        "maleDexEntry-normal-417",
         "femaleDexEntry-normal-417",
         "maleDexEntry-normal-418",
         "femaleDexEntry-normal-418",
@@ -313,8 +248,6 @@
         "femaleDexEntry-normal-456",
         "maleDexEntry-normal-457",
         "femaleDexEntry-normal-457",
-        "maleDexEntry-normal-465",
-        "femaleDexEntry-normal-465",
         "altDexEntry-normal-025-pikachu-original-cap",
         "altDexEntry-normal-025-pikachu-johto-cap",
         "altDexEntry-normal-025-pikachu-hoenn-cap",
@@ -367,7 +300,6 @@
         "unownDexEntry-normal-16",
         "unownDexEntry-normal-17",
         "unownDexEntry-normal-21",
-        "unownDexEntry-normal-22",
         "unownDexEntry-normal-24",
         "unownDexEntry-normal-25",
         "unownDexEntry-normal-26",
@@ -389,7 +321,56 @@
         "vivillonDexEntry-normal-16",
         "vivillonDexEntry-normal-17",
         "vivillonDexEntry-normal-18",
-        "vivillonDexEntry-normal-19"
+        "vivillonDexEntry-normal-19",
+        "altDexEntry-normal-421-cherrim-overcast",
+        "alcremieDexEntry-normal-4",
+        "alcremieDexEntry-normal-5",
+        "alcremieDexEntry-normal-11",
+        "alcremieDexEntry-normal-12",
+        "alcremieDexEntry-normal-13",
+        "alcremieDexEntry-normal-14",
+        "alcremieDexEntry-normal-15",
+        "alcremieDexEntry-normal-16",
+        "alcremieDexEntry-normal-17",
+        "alcremieDexEntry-normal-18",
+        "alcremieDexEntry-normal-19",
+        "alcremieDexEntry-normal-20",
+        "alcremieDexEntry-normal-21",
+        "alcremieDexEntry-normal-22",
+        "alcremieDexEntry-normal-23",
+        "alcremieDexEntry-normal-24",
+        "alcremieDexEntry-normal-25",
+        "alcremieDexEntry-normal-26",
+        "alcremieDexEntry-normal-28",
+        "alcremieDexEntry-normal-29",
+        "alcremieDexEntry-normal-30",
+        "alcremieDexEntry-normal-31",
+        "alcremieDexEntry-normal-32",
+        "alcremieDexEntry-normal-33",
+        "alcremieDexEntry-normal-34",
+        "alcremieDexEntry-normal-35",
+        "alcremieDexEntry-normal-36",
+        "alcremieDexEntry-normal-37",
+        "alcremieDexEntry-normal-38",
+        "alcremieDexEntry-normal-39",
+        "alcremieDexEntry-normal-40",
+        "alcremieDexEntry-normal-41",
+        "alcremieDexEntry-normal-46",
+        "alcremieDexEntry-normal-47",
+        "alcremieDexEntry-normal-48",
+        "alcremieDexEntry-normal-49",
+        "alcremieDexEntry-normal-51",
+        "alcremieDexEntry-normal-52",
+        "alcremieDexEntry-normal-53",
+        "alcremieDexEntry-normal-54",
+        "alcremieDexEntry-normal-55",
+        "alcremieDexEntry-normal-56",
+        "alcremieDexEntry-normal-57",
+        "alcremieDexEntry-normal-58",
+        "alcremieDexEntry-normal-59",
+        "alcremieDexEntry-normal-60",
+        "alcremieDexEntry-normal-61",
+        "alcremieDexEntry-normal-62"
     ];
     
     for (i = 0; i < wishlist.length; i++) {
@@ -398,10 +379,6 @@
     
     for (i = 0; i < movelist.length; i++) {
         document.getElementById(movelist[i]).classList.add("traded");
-    }
-    
-    for (i = 0; i < swordlist.length; i++) {
-        document.getElementById(swordlist[i]).classList.add("sword");
     }
     
 </script>

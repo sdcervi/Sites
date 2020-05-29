@@ -214,23 +214,34 @@ echo '</div></div>';
 $boxCounter = 1;
 $printCounter = 0;
 
-echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="Alcremie ' . $boxCounter . '">';
-echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie' . $boxCounter . '">';
-
-echo '<div class="row">';
-
 $row = mysqli_fetch_assoc ($alcremieArray);$dexID = str_pad((string) $row['id'], 3, '0', STR_PAD_LEFT);
 $species = $row['name'];
 $formArray = json_decode ($row['alts'], true);
 $num_flavors = sizeof($formArray[0]['flavors']);
 $num_toppings = sizeof($formArray[0]['toppings']);
 
+if ($dextype == 'shiny')
+{
+    $num_flavors = 1;
+    $boxCounter = null;
+}
+
+echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="Alcremie ' . $boxCounter . '">';
+echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie' . $boxCounter . '">';
+
+echo '<div class="row">';
+
 for ($flavorCounter = 0; $flavorCounter < $num_flavors; $flavorCounter++) {
     $flavorImg = $formArray[0]['flavors'][$flavorCounter];
     $flavor = str_replace("-", " ", $formArray[0]['flavors'][$flavorCounter]);
+    $flavor = $flavor . '<br>';
+    if ($dextype == 'shiny')
+    {
+        $flavor = null;
+    }
     for ($toppingCounter = 0; $toppingCounter < $num_toppings; $toppingCounter++) {
         $topping = $formArray[0]['toppings'][$toppingCounter];
-        echo '<div class="card col-2 dex-entry" id="alcremieDexEntry-' . $dextype . '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changeCaughtState(\'alcremieDexEntry-' . $dextype . '-' . $printCount . $flavorImg . '-' . $topping . '\')"><div class="card-body"><div class="trade-icon" id="alcremieDexEntry-trade-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changeTradeState(\'alcremieDexEntry-trade-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '\')"></div><div class="place-icon" id="alcremieDexEntry-place-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changePlaceState(\'alcremieDexEntry-place-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">' . $flavor . '<br>' . $topping . '</h4></div></div>';
+        echo '<div class="card col-2 dex-entry" id="alcremieDexEntry-' . $dextype . '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changeCaughtState(\'alcremieDexEntry-' . $dextype . '-' . $printCount . $flavorImg . '-' . $topping . '\')"><div class="card-body"><div class="trade-icon" id="alcremieDexEntry-trade-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changeTradeState(\'alcremieDexEntry-trade-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '\')"></div><div class="place-icon" id="alcremieDexEntry-place-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '" onclick="changePlaceState(\'alcremieDexEntry-place-' . $dextype. '-' . $printCount . $flavorImg . '-' . $topping . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/alcremie-' . $flavorImg . '-' . $topping . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4><h4 class="dex-entry-form">' . $flavor . $topping . '</h4></div></div>';
 	
         $printCounter++;
         if (($printCounter % 6) == 0) {
