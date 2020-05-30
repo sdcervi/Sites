@@ -1,7 +1,7 @@
 <?php
 
-require '/var/www/html/config.ini';
-$config = parse_ini_file('/var/www/html/config.ini');
+$config = parse_ini_file('../../config.ini');
+var_dump ($config);
 $connection = new mysqli ($config['host'], $config['username'], $config['password'], $config['db']);
 // We should definitely set up a different user so that root isn't used for this
 $dexArray = $connection->query("SELECT id, name FROM dexDB");
