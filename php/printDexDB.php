@@ -1,6 +1,7 @@
 <?php
 
 $config = parse_ini_file('../../config.ini');
+echo 'config read correctly';
 $connection = new mysqli ($config['host'], $config['username'], $config['password'], $config['db']);
 echo 'mysql connection successful';
 // We should definitely set up a different user so that root isn't used for this
