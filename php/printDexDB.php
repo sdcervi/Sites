@@ -2,8 +2,10 @@
 
 $config = parse_ini_file('../../config.ini');
 $connection = new mysqli ($config['host'], $config['username'], $config['password'], $config['db']);
+echo 'mysql connection successful';
 // We should definitely set up a different user so that root isn't used for this
 $dexArray = $connection->query("SELECT id, name FROM dexDB");
+var_dump ($dexArray);
 
 $start = (30 * ($boxNum - 1)) + 1;
 $boxStart = str_pad((string) $start, 3, '0', STR_PAD_LEFT);
