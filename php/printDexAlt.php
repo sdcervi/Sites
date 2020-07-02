@@ -73,7 +73,7 @@ echo '</div></div>';
 $genderBoxCounter = 1;
 
 echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
-echo '<div class="card-header" id="gender-forms-' . $dextype . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '" aria-expanded="true" aria-controls="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><h3>Gender-Specific Forms ' . $genderBoxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
+echo '<div class="card-header" id="gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '" aria-expanded="true" aria-controls="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><h3>Gender-Specific Forms ' . $genderBoxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
 
 echo '<div class="row">';
 
@@ -95,7 +95,7 @@ for ($dexNum = 1; $dexNum <= $maxDexEntries ; $dexNum++) {
                 $genderBoxCounter++;
                 echo '</div></div></div>';
                 echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
-                echo '<div class="card-header" id="gender-forms-' . $dextype . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '" aria-expanded="true" aria-controls="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><h3>Gender-Specific Forms ' . $genderBoxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
+                echo '<div class="card-header" id="gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '" aria-expanded="true" aria-controls="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '"><h3>Gender-Specific Forms ' . $genderBoxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-gender-forms-' . $dextype . '-' . $genderBoxCounter . '">';
                 echo '<div class="row">';
             }
             else {

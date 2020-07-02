@@ -162,7 +162,8 @@
         "collapse871",
         "collapse-alolan-forms-normal",
         "collapse-galarian-forms-normal",
-        "collapse-gender-forms-normal-1"
+        "collapse-gender-forms-normal-1",
+        "collapse-gender-forms-normal-7"
     ];
     for (i = 0; i < completeBoxes.length; i++) {
         document.getElementById(completeBoxes[i]).classList.remove("show");
@@ -172,27 +173,12 @@
 <script>
     
     let movelist = [
-        "maleDexEntry-normal-198",
-        "maleDexEntry-normal-417",
-        "alcremieDexEntry-normal-7",
-        "alcremieDexEntry-normal-44",
-        "dexEntry-normal-781",
-        
         "femaleDexEntry-normal-190",
-        "maleDexEntry-normal-465",
-        "alcremieDexEntry-normal-15" 
+        "maleDexEntry-normal-186",
+        "femaleDexEntry-normal-203",
+        "femaleDexEntry-normal-212",
+        "femaleDexEntry-normal-186"
     ];
-    
-    /* GOURGEIST
-    Small Size: 2'4" (0.7)
-    Average Size: 2'11" (0.9m)
-    Large Size: 3'7" (1.1m)
-    Super Size: 5'7" (1.7m)
-    Small Size: 20.9 lbs (9.5kg)
-    Average Size: 27.6 lbs. (12.5kg)
-    Large Size: 30.9 lbs (14kg)
-    Super Size: 86 lbs (39kg)
-    */
 
     let wishlist = [
         "dexEntry-normal-384",
@@ -204,12 +190,8 @@
         "dexEntry-normal-718",
         "dexEntry-normal-720",
         "dexEntry-normal-807",
-        "maleDexEntry-normal-186",
-        "femaleDexEntry-normal-186",
         "femaleDexEntry-normal-198",
-        "femaleDexEntry-normal-203",
         "maleDexEntry-normal-212",
-        "femaleDexEntry-normal-212",
         "maleDexEntry-normal-217",
         "femaleDexEntry-normal-217",
         "maleDexEntry-normal-232",
@@ -225,7 +207,6 @@
         "femaleDexEntry-normal-322",
         "maleDexEntry-normal-332",
         "femaleDexEntry-normal-332",
-        "femaleDexEntry-normal-369",
         "maleDexEntry-normal-397",
         "maleDexEntry-normal-398",
         "maleDexEntry-normal-399",
@@ -245,7 +226,6 @@
         "femaleDexEntry-normal-424",
         "femaleDexEntry-normal-444",
         "femaleDexEntry-normal-445",
-        "maleDexEntry-normal-456",
         "femaleDexEntry-normal-456",
         "maleDexEntry-normal-457",
         "femaleDexEntry-normal-457",
@@ -323,7 +303,6 @@
         "vivillonDexEntry-normal-17",
         "vivillonDexEntry-normal-18",
         "vivillonDexEntry-normal-19",
-        "altDexEntry-normal-421-cherrim-overcast",
         "alcremieDexEntry-normal-4",
         "alcremieDexEntry-normal-5",
         "alcremieDexEntry-normal-11",
@@ -336,7 +315,6 @@
         "alcremieDexEntry-normal-19",
         "alcremieDexEntry-normal-20",
         "alcremieDexEntry-normal-21",
-        "alcremieDexEntry-normal-22",
         "alcremieDexEntry-normal-23",
         "alcremieDexEntry-normal-24",
         "alcremieDexEntry-normal-25",
@@ -358,7 +336,6 @@
         "alcremieDexEntry-normal-46",
         "alcremieDexEntry-normal-47",
         "alcremieDexEntry-normal-48",
-        "alcremieDexEntry-normal-49",
         "alcremieDexEntry-normal-51",
         "alcremieDexEntry-normal-52",
         "alcremieDexEntry-normal-53",

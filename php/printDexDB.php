@@ -1,12 +1,9 @@
 <?php
 
 $config = parse_ini_file('../../config.ini');
-echo 'config read correctly';
 $connection = new mysqli ($config['host'], $config['username'], $config['password'], $config['db']);
-echo 'mysql connection successful';
 // We should definitely set up a different user so that root isn't used for this
 $dexArray = $connection->query("SELECT id, name FROM dexDB");
-var_dump ($dexArray);
 
 $start = (30 * ($boxNum - 1)) + 1;
 $boxStart = str_pad((string) $start, 3, '0', STR_PAD_LEFT);
@@ -51,7 +48,7 @@ while ($row = mysqli_fetch_assoc ($dexArray)){
 	if ($species == "alcremie"){
 		$img_species = "alcremie-vanilla-cream-strawberry";
 	}
-	echo '<div class="card col-2 dex-entry" id="dexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'dexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><div class="trade-icon" id="dexEntry-trade-' . $dextype. '-' . $dexID . '" onclick="changeTradeState(\'dexEntry-trade-' . $dextype. '-' . $dexID . '\')"></div><div class="place-icon" id="dexEntry-place-' . $dextype. '-' . $dexID . '" onclick="changePlaceState(\'dexEntry-place-' . $dextype. '-' . $dexID . '\')"></div><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
+	echo '<div class="card col-2 dex-entry" id="dexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'dexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
     $printCounter++;
 	if (($printCounter % 6) == 0) {
         if (($printCounter % 30) == 0) {

@@ -69,6 +69,35 @@
             <li>Transparency in favicon</li>
             <li>Single sign on via Google/etc</li>
             <li>Functionify the PHP so we're calling functions instead of repeating code blocks</li>
+            <li>Add Pumpkaboo and Gourgeist metrics to alt names</li>
+            <!--
+            PUMPKABOO
+            1'00"	0.3 m
+            Small Size
+            1'04"	0.4 m
+            Average Size
+            1'08"	0.5 m
+            Large Size
+            2'07"	0.8 m
+            Super Size
+            7.7 lbs.	3.5 kg
+            Small Size
+            11.0 lbs.	5.0 kg
+            Average Size
+            16.5 lbs.	7.5 kg
+            Large Size
+            33.1 lbs.	15.0 kg
+            Super Size
+
+            GOURGEIST
+            Small Size: 2'4" (0.7)
+            Average Size: 2'11" (0.9m)
+            Large Size: 3'7" (1.1m)
+            Super Size: 5'7" (1.7m)
+            Small Size: 20.9 lbs (9.5kg)
+            Average Size: 27.6 lbs. (12.5kg)
+            Large Size: 30.9 lbs (14kg)
+            Super Size: 86 lbs (39kg)-->
 		</ul>
 		
 		<h2>Bugs to squish</h2>
@@ -79,6 +108,10 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-07-02</li>
+            <ul>
+                <li>Implemented a sequential toggle of trading-placing-caught states for better usability</li>
+            </ul>
             <li>2020-05-28</li>
             <ul>
                 <li>Ported MySQL database to a hosted solution rather than my laptop</li>
