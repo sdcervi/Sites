@@ -46,6 +46,7 @@
 		<h2>Features to add:</h2>
         <h3>High priority</h3>
 		<ul>
+            <li>Figure out how to auto-pull to live site after I push to master on local dev instance</li>
             <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
             <li>Add expand/collapse icons for boxes</li>
 			<li>Lazyload images</li>
