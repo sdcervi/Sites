@@ -107,6 +107,10 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-11-22</li>
+            <ul>
+                <li>Migrated to a new hosting solution</li>
+            </ul>
             <li>2020-07-15</li>
             <ul>
                 <li>Added dynamically changing Expand/Collapse text for each dex set</li>
