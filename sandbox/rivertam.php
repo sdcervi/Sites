@@ -59,7 +59,7 @@
 				$maxBoxes = 30;
 				for ($i = 0; $i < $maxBoxes; $i++){
 					$boxNum = $i + 1;
-					include '../php/printDex.php';
+					include '../_archive/printDex.php';
 				}
 			?>
 			
@@ -77,7 +77,7 @@
 			
 			<?php
 				$dextype = 'normal';
-				include '../php/printDexAlt.php';
+				include '../_archive/printDexAlt.php';
 			?>
 			
 		</div>
@@ -99,7 +99,7 @@
 				$maxBoxes = 30;
 				for ($i = 0; $i < $maxBoxes; $i++){
 					$boxNum = $i + 1;
-					include '../php/printDex.php';
+					include '../_archive/printDex.php';
 				}
 			?>
 			
@@ -117,7 +117,7 @@
 			
 			<?php
 				$dextype = 'shiny';
-				include '../php/printDexAlt.php';
+				include '../_archive/printDexAlt.php';
 			?>
 			
 		</div>
@@ -163,6 +163,9 @@
         "collapse-alolan-forms-normal",
         "collapse-galarian-forms-normal",
         "collapse-gender-forms-normal-1",
+        "collapse-gender-forms-normal-2",
+        "collapse-gender-forms-normal-3",
+        "collapse-gender-forms-normal-4",
         "collapse-gender-forms-normal-7"
     ];
     for (i = 0; i < completeBoxes.length; i++) {
@@ -173,60 +176,23 @@
 <script>
     
     let movelist = [
-        "femaleDexEntry-normal-190",
-        "maleDexEntry-normal-186",
-        "femaleDexEntry-normal-203",
-        "femaleDexEntry-normal-212",
-        "femaleDexEntry-normal-186"
+        
     ];
 
     let wishlist = [
-        "dexEntry-normal-384",
         "dexEntry-normal-385",
         "dexEntry-normal-386",
         "dexEntry-normal-489",
         "dexEntry-normal-490",
-        "dexEntry-normal-717",
-        "dexEntry-normal-718",
         "dexEntry-normal-720",
         "dexEntry-normal-807",
-        "femaleDexEntry-normal-198",
-        "maleDexEntry-normal-212",
-        "maleDexEntry-normal-217",
-        "femaleDexEntry-normal-217",
-        "maleDexEntry-normal-232",
-        "femaleDexEntry-normal-232",
-        "maleDexEntry-normal-256",
-        "femaleDexEntry-normal-256",
-        "femaleDexEntry-normal-257",
-        "maleDexEntry-normal-267",
-        "femaleDexEntry-normal-267",
-        "maleDexEntry-normal-269",
-        "femaleDexEntry-normal-269",
-        "femaleDexEntry-normal-317",
-        "femaleDexEntry-normal-322",
-        "maleDexEntry-normal-332",
-        "femaleDexEntry-normal-332",
-        "maleDexEntry-normal-397",
-        "maleDexEntry-normal-398",
-        "maleDexEntry-normal-399",
-        "maleDexEntry-normal-400",
-        "femaleDexEntry-normal-400",
-        "maleDexEntry-normal-401",
-        "femaleDexEntry-normal-401",
-        "maleDexEntry-normal-402",
-        "femaleDexEntry-normal-403",
         "maleDexEntry-normal-404",
         "femaleDexEntry-normal-404",
-        "maleDexEntry-normal-405",
-        "femaleDexEntry-normal-417",
         "maleDexEntry-normal-418",
         "femaleDexEntry-normal-418",
         "maleDexEntry-normal-424",
         "femaleDexEntry-normal-424",
-        "femaleDexEntry-normal-444",
         "femaleDexEntry-normal-445",
-        "femaleDexEntry-normal-456",
         "maleDexEntry-normal-457",
         "femaleDexEntry-normal-457",
         "altDexEntry-normal-025-pikachu-original-cap",
@@ -273,36 +239,24 @@
         "altDexEntry-normal-800-necrozma",
         "altDexEntry-normal-800-necrozma-dawn-wings",
         "altDexEntry-normal-800-necrozma-dusk-mane",
-        "unownDexEntry-normal-6",
         "unownDexEntry-normal-11",
         "unownDexEntry-normal-13",
         "unownDexEntry-normal-14",
-        "unownDexEntry-normal-15",
-        "unownDexEntry-normal-16",
         "unownDexEntry-normal-17",
-        "unownDexEntry-normal-21",
         "unownDexEntry-normal-24",
         "unownDexEntry-normal-25",
-        "unownDexEntry-normal-26",
         "vivillonDexEntry-normal-0",
         "vivillonDexEntry-normal-1",
-        "vivillonDexEntry-normal-2",
         "vivillonDexEntry-normal-4",
-        "vivillonDexEntry-normal-5",
-        "vivillonDexEntry-normal-6",
         "vivillonDexEntry-normal-7",
         "vivillonDexEntry-normal-8",
         "vivillonDexEntry-normal-9",
-        "vivillonDexEntry-normal-10",
-        "vivillonDexEntry-normal-11",
         "vivillonDexEntry-normal-12",
         "vivillonDexEntry-normal-13",
-        "vivillonDexEntry-normal-14",
         "vivillonDexEntry-normal-15",
         "vivillonDexEntry-normal-16",
         "vivillonDexEntry-normal-17",
         "vivillonDexEntry-normal-18",
-        "vivillonDexEntry-normal-19",
         "alcremieDexEntry-normal-4",
         "alcremieDexEntry-normal-5",
         "alcremieDexEntry-normal-11",

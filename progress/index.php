@@ -47,6 +47,7 @@
         <h3>High priority</h3>
 		<ul>
             <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
+            <li>Add expand/collapse icons for boxes</li>
 			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
             <li>High contrast mode</li>
@@ -63,12 +64,10 @@
                 <li>Blue: placing</li>
             </ul>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
-			<li>Dynamically updating caught count for each box</li>
-			<li>Dynamically updating caught % at top of page</li>
-            <li>Add expand/collapse icons for boxes</li>
+			<li>Dynamically updating caught count/% for each box</li>
             <li>Transparency in favicon</li>
             <li>Single sign on via Google/etc</li>
-            <li>Functionify the PHP so we're calling functions instead of repeating code blocks</li>
+            <li>Sticky footer</li>
             <li>Add Pumpkaboo and Gourgeist metrics to alt names</li>
             <!--
             PUMPKABOO
@@ -108,6 +107,14 @@
 		<h2>Changelog</h2>
 		<ul>
 		<ul>
+            <li>2020-07-15</li>
+            <ul>
+                <li>Added dynamically changing Expand/Collapse text for each dex set</li>
+            </ul>
+            <li>2020-07-13</li>
+            <ul>
+                <li>Moved MySQL-based index to homepage and archived old version</li>
+            </ul>
             <li>2020-07-02</li>
             <ul>
                 <li>Implemented a sequential toggle of trading-placing-caught states for better usability</li>
