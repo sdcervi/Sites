@@ -48,6 +48,9 @@ while ($row = mysqli_fetch_assoc ($dexArray)){
 	if ($species == "alcremie"){
 		$img_species = "alcremie-vanilla-cream-strawberry";
 	}
+	if ($species == "urshifu"){
+		$img_species = "urshifu-single-strike";
+	}
 	echo '<div class="card col-2 dex-entry" id="dexEntry-' . $dextype. '-' . $dexID . '" onclick="changeCaughtState(\'dexEntry-' . $dextype. '-' . $dexID . '\')"><div class="card-body"><img src="https://img.pokemondb.net/sprites/home/' . $dextype . '/' . $img_species . '.png" alt=""><h4 class="dex-entry-number">' . $dexID . '</h4><h4 class="dex-entry-name">' . $species . '</h4></div></div>';
     $printCounter++;
 	if (($printCounter % 6) == 0) {
