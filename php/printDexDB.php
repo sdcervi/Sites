@@ -48,6 +48,12 @@ while ($row = mysqli_fetch_assoc ($dexArray)){
 	if ($species == "alcremie"){
 		$img_species = "alcremie-vanilla-cream-strawberry";
 	}
+	if ($species == "zacian"){
+		$img_species = "zacian-hero";
+	}
+	if ($species == "zamazenta"){
+		$img_species = "zamazenta-hero";
+	}
 	if ($species == "urshifu"){
 		$img_species = "urshifu-single-strike";
 	}
